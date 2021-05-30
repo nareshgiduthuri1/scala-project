@@ -68,3 +68,4 @@
 [0m[[0m[0minfo[0m] [0m[0mNon-compiled module 'compiler-bridge_2.13' for Scala 2.13.6. Compiling...[0m
 [0m[[0m[0minfo[0m] [0m[0m  Compilation completed in 17.574s.[0m
 [0m[[0m[0minfo[0m] [0m[0mStarting scala interpreter...[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn the last 3305 seconds, 6.022 (0.2%) were spent in GC. [Heap: 0.76GB free of 0.90GB, max 0.90GB] Consider increasing the JVM heap using `-Xmx` or try a different collector, e.g. `-XX:+UseG1GC`, for better performance.[0m
