@@ -1,4 +1,5 @@
 import java.util.Date
+import Array._
 
 
 object Hello {
@@ -204,9 +205,107 @@ object Hello {
       println(result);
       println("(%d -- %f -- %s)".format(a,b,str1));
       printf("(%d -- %f -- %s)",a,b,str1);
-    */
+
 
     // Arrays
+    val myarray: Array[Int] = new Array[Int](4); // declaring an array
+    val myarray2 = new Array[Int](5);
+    val myarray3 = Array(1,2,3,4,5,6);
+      myarray(0) = 20;
+      myarray(1) = 30;
+      myarray(2) = 40;
+      myarray(3) = 50;
+      println(myarray);
+      for (x <- myarray){
+        println(x);
+      }
+      for (x <- myarray2){
+        println(x);
+      }
+      for (i<-0 to (myarray.length -1)) {
+        println(myarray(i));
+      }
+      println(myarray3.length);
+      val result = concat(myarray, myarray3);
+      for (x <- result){
+        println(x);
+      }
+
+// Lists - collection of similar similar data type values (immutable)
+
+  val mylist : List[Int] = List(1,2,3,4,5,6,7,8);
+    val names : List[String] = List("Max", "John");
+
+    println(mylist);
+    println(names);
+    println(5:: 2:: 3:: Nil);
+    println(mylist.head);
+    println(names.tail);
+    println(names.isEmpty);
+    println(names.reverse);
+    println(List.fill(5)(2));
+    println(mylist.max);
+
+    mylist.foreach(println)
+    var sum :Int =0;
+    mylist.foreach(sum+=_);
+    println(sum);
+
+for (name <- names){
+  println(name);
+}
+println(names(0));
+*/
+    val mySet : Set[Int] =Set(1,2,3,4,5,6,7,8);
+    val names : Set[String] = Set("Max", "John");
+
+    println(mySet);
+    println(names);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
